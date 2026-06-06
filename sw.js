@@ -1,4 +1,4 @@
-const CACHE_NAME = 'MDify-v1.3.6';
+const CACHE_NAME = 'Synthwave-Lab-v1.0.1';
 const OFFLINE_PAGE = 'index.html';
 const ASSETS = [
   'index.html',

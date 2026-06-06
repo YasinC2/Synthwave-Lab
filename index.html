@@ -2196,7 +2196,7 @@
         // ── COUNTER ──
         if (si % 4 === 2) {
           const cp = melPat.counter?.[si];
-          if (cp && !TS.counter.muted && energy > 0.3 && Math.random() > 0.25) {
+          if (cp && !TS.counter.muted && energy > 0.3 && Math.random() > 0.5) {
             counterS.triggerAttackRelease(cp.note, '8n', sTime, cp.vel * energy * 0.65);
           }
         }
