@@ -1465,7 +1465,7 @@
       { id: 'snare', name: 'Snare', icon: '🪘', col: '#fb923c', def: -4 },
       { id: 'hihat', name: 'Hi-Hat', icon: '🎩', col: '#fbbf24', def: -7 },
       { id: 'rim', name: 'Rim', icon: '🔔', col: '#a3e635', def: -8 },
-      { id: 'bass', name: 'Bass', icon: '🎸', col: '#34d399', def: -5 },
+      { id: 'bass', name: 'Bass', icon: '🎸', col: '#34d399', def: -10 },
       { id: 'chords', name: 'Chords', icon: '🎹', col: '#22d3ee', def: -15 },
       { id: 'pad', name: 'Pad', icon: '🌊', col: '#a78bfa', def: -12 },
       { id: 'piano', name: 'Piano', icon: '🎼', col: '#c084fc', def: -8 },
@@ -2743,6 +2743,14 @@
     // Pre-build static UI (before audio)
     buildTracks();
     buildPatGrid();
+  </script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(() => console.log('Service Worker Registered'));
+      });
+    }
   </script>
 </body>
 
